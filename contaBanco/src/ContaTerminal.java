@@ -4,7 +4,7 @@ public class ContaTerminal {
         int numero;	
         String agencia;
         String cliente;
-        long saldo;
+        double saldo;
 
         Scanner scanner = new Scanner(System.in);
 
@@ -15,7 +15,7 @@ public class ContaTerminal {
         System.out.println("Entre com o número da conta!");
         numero = scanner.nextInt();
         System.out.println("Qual o valor para abertura de conta?");
-        saldo = scanner.nextLong();
+        saldo = scanner.nextDouble();
 
         String mensagem = "Olá ".concat(cliente)
             .concat(", obrigado por criar uma conta em nosso banco, sua agência é ")
